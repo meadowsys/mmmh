@@ -1,7 +1,9 @@
 declare global {
    interface String {
       /**
-       * lOOLLLLLL
+       * Reverses the characters in a string.
+       *
+       * For example, the string `1234` becomes `4321`.
        */
       reverse(): string;
    }
