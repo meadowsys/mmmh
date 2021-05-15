@@ -1,3 +1,5 @@
+import "./proto";
+
 /**
  * h
  * @return h
