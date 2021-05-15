@@ -5,6 +5,7 @@
    "main": "cjs/index.js",
    "module": "mjs/index.js",
    "types": "types/index.d.ts",
+   "sideEffects": true,
    "exports": {
       "import": "./mjs/index.js",
       "require": "./cjs/index.js"
