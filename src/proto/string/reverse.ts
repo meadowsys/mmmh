@@ -1,12 +1,12 @@
 declare global {
    interface String {
+      /**
+       * lOOLLLLLL
+       */
       reverse(): string;
    }
 }
 
-/**
- * lOOLLLLLL
- */
 String.prototype.reverse = function() {
    return [...this].reverse().join("");
 }
