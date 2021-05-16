@@ -1,3 +1,5 @@
+export {};
+
 declare global {
    interface String {
       /**
@@ -12,5 +14,3 @@ declare global {
 String.prototype.reverse = function() {
    return [...this].reverse().join("");
 }
-
-export {};
