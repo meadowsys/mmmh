@@ -1,2 +1,3 @@
-import "./string";
+import "./array";
 import "./math";
+import "./string";
