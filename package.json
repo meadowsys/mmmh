@@ -1,7 +1,7 @@
 {
    "name": "mmmh",
    "version": "0.0.0",
-   "description": "collection of the weirdest functions. Likely to bloat ur program.",
+   "description": "collection of the weirdest functions. Likely to bloat ur program and operates on side effects.",
    "main": "cjs/index.js",
    "module": "mjs/index.js",
    "types": "types/index.d.ts",
