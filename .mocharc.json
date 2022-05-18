@@ -1,5 +1,5 @@
 {
 	"parallel": true,
-	"extension": ["ts"],
+	"extension": ["test.ts"],
 	"require": "ts-node/register"
 }
