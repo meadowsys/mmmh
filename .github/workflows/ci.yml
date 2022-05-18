@@ -38,7 +38,7 @@ jobs:
         echo "${{ secrets.CODECOV_PUB_KEY }}" | gpg --import
         curl -O https://uploader.codecov.io/latest/linux/codecov.SHA256SUM
         curl -O https://uploader.codecov.io/latest/linux/codecov.SHA256SUM.sig
-        gpgv codecov.SHA256SUM.sig codecov.SHA256SUM
+        gpg --verify codecov.SHA256SUM.sig codecov.SHA256SUM
 
         chmod +x codecov
         ./codecov
