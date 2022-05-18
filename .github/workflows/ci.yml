@@ -36,8 +36,8 @@ jobs:
 
         # gpg integrity check
         echo "${{ secrets.CODECOV_PUB_KEY }}" | gpg --no-default-keyring --keyring keys.gpg --import
-        curl -S https://uploader.codecov.io/latest/linux/codecov.SHA256SUM
-        curl -S https://uploader.codecov.io/latest/linux/codecov.SHA256SUM.sig
+        curl -O https://uploader.codecov.io/latest/linux/codecov.SHA256SUM
+        curl -O https://uploader.codecov.io/latest/linux/codecov.SHA256SUM.sig
         gpgv codecov.SHA256SUM.sig codecov.SHA256SUM
 
         chmod +x codecov
