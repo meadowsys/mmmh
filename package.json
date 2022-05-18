@@ -10,7 +10,11 @@
 	"types": "index.d.ts",
 	"sideEffects": false,
 	"files": [
-		"mjs"
+		"mjs",
+		"*.js",
+		"*.js.map",
+		"*.d.ts",
+		"*.d.ts.map"
 	],
 	"scripts": {
 		"clean": "rm -fv *.js *.js.map *.d.ts *.d.ts.map && rm -f *.js *.js.map *.d.ts *.d.ts.map",
