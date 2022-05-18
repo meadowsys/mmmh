@@ -4,16 +4,17 @@
 	"description": "collection of utilities, both useful and not",
 	"packageManager": "pnpm@7.0.1",
 	"type": "module",
-	"main": "mjs/index.js",
-	"module": "mjs/index.js",
-	"browser": "mjs/index.js",
-	"types": "mjs/index.d.ts",
+	"main": "index.js",
+	"module": "index.js",
+	"browser": "index.js",
+	"types": "index.d.ts",
 	"sideEffects": false,
 	"files": [
 		"mjs"
 	],
 	"scripts": {
-		"build": "rm -rf mjs && tsc"
+		"clean": "rm -fv *.js *.js.map *.d.ts *.d.ts.map && rm -f *.js *.js.map *.d.ts *.d.ts.map",
+		"build": "pnpm run clean && tsc"
 	},
 	"engines": {
 		"node": ">=16"
