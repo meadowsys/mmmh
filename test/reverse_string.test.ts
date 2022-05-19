@@ -2,7 +2,7 @@ import * as mmmh from "../src";
 import { describe, test } from "mocha";
 import { assert } from "./testutil";
 
-describe("reverse string", () => {
+describe("reverse_string", () => {
 	test("it should reverse string", () => {
 		assert(
 			mmmh.reverse_string("abcde") === "edcba",
