@@ -13,7 +13,7 @@ function debounce(
 		if (!immediate) fn();
 	}
 
-	return function(...args) {
+	return function() {
 		if (timeout) {
 			clearTimeout(timeout);
 			timeout = setTimeout(call, wait);
