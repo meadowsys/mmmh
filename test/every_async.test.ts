@@ -42,4 +42,24 @@ describe("every_async", () => {
 		);
 		assert(res2, "elements should be fine, still resolve to the number that they initially were");
 	});
+
+	test("it loop and fail", async () => {
+		const array = [10, 20, 30, 40, "50???"];
+		const res = await mmmh.every_async(array, item => typeof item === "number");
+		assert(!res, "every_async should return false for element not passing predicate test");;
+
+		const array2 = ["10???", 20, 30, 40, 50];
+		const res2 = await mmmh.every_async(array2, item => typeof item === "number");
+		assert(!res2, "every_async should return false for element not passing predicate test");
+
+		const array3 = [10, "20???", 30, 40, 50];
+		const res3 = await mmmh.every_async(array3, item => typeof item === "number");
+		assert(!res3, "every_async should return false for element not passing predicate test");
+	});
+
+	test("it loop and fail with promisy", async () => {
+		const array = [10, 20, 30, 40, 50, false].map(i => Promise.resolve(i));
+		const res = await mmmh.every_async(array, item => typeof item === "number");
+		assert(!res, "every_async should return false for element not passing predicate test");
+	});
 });
