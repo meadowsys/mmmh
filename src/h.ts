@@ -1,3 +1,8 @@
+/**
+ * h
+ *
+ * @returns h
+ */
 function h() {
 	return "h";
 }
