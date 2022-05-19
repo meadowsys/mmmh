@@ -30,10 +30,12 @@
  * @param str character or string to use
  * @param maxlen the maximum length of the total
  */
-export default function repeat_woogly(str: string, maxlen: number) {
+function repeat_woogly(str: string, maxlen: number) {
 	return Array(maxlen)
 		.fill(null)
 		.map((_, i) => i + 1)
 		.map(i => str.repeat(i))
 		.join("\n");
 }
+
+export default repeat_woogly;

@@ -1,7 +1,7 @@
 // heavily took inspiration from underscore
 // https://underscorejs.org
 
-export default function debounce(
+function debounce(
 	fn: (this: void) => void,
 	wait: number,
 	immediate = false
@@ -24,3 +24,5 @@ export default function debounce(
 		timeout = setTimeout(call, wait);
 	}
 }
+
+export default debounce;

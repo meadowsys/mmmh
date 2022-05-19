@@ -1,3 +1,5 @@
-export default function h() {
+function h() {
 	return "h";
 }
+
+export default h;
