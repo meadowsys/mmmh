@@ -2,12 +2,12 @@
 // https://underscorejs.org
 
 /**
- * delay calling a function until a certain amount of time has passed that the function
- * has not been called.
+ * delay calling a function until a certain amount of time has passed since the function
+ * has last been called.
  *
  * @param fn function to call. Simple function, no parameters, no this, no return value.
  * @param wait time (in miliseconds) to wait
- * @param immediate whether or not to call the function immediately, instead of after the function ends.
+ * @param immediate If true, calls the function immediately, on the first edge of the interval
  * @returns debounced function. Call this instead of the original
  */
 function debounce(
