@@ -30,7 +30,7 @@
  * @param str character or string to use
  * @param maxlen the maximum length of the total
  */
-export default function(str: string, maxlen: number) {
+export default function repeat_woogly(str: string, maxlen: number) {
 	return Array(maxlen)
 		.fill(null)
 		.map((_, i) => i + 1)
